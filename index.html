@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أوجا ماركت - سوقك الإلكتروني</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.en.html"><div class="language-switcher">
+            <button class="lang-btn" id="langToggle">
+                <i class="fas fa-globe"></i>
+                <span>English</span>
+            </button>
+        </div></a>
+        <div class="header-content">
+            <div class="logo-section">
+                <h1>أوجا ماركت
+                    <img src="logo.png" alt="Ouja Market Logo" style="height:50px; vertical-align:middle; margin-left:10px;">
+                    
+                </h1>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="ابحث عن منتج أو فئة...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <p class="header-subtitle">سوقك الإلكتروني لبيع وشراء المنتجات بكل سهولة وأمان</p>
+        </div>
+    </header>
+    
+    <div class="categories-container">
+        <button class="category-btn active-category" data-category="الكل"><i class="fas fa-list"></i> جميع المنتجات</button>
+        <button class="category-btn" data-category="ملابس"><i class="fas fa-tshirt"></i> ملابس</button>
+        <button class="category-btn" data-category="طعام"><i class="fas fa-utensils"></i> طعام</button>
+        <button class="category-btn" data-category="هواتف"><i class="fas fa-mobile-alt"></i> هواتف</button>
+        <button class="category-btn" data-category="أجهزة كهربائية"><i class="fas fa-plug"></i> أجهزة كهربائية</button>
+        <button class="category-btn" data-category="أثاث"><i class="fas fa-couch"></i> أثاث</button>
+        <button class="category-btn" data-category="أدوات تجميل"><i class="fas fa-makeup-brush"></i> أدوات تجميل</button>
+    </div>
+    
+    <div class="search-results-info" id="resultsInfo">
+        يتم عرض <span id="resultsCount">0</span> منتج من أصل <span id="totalProducts">0</span>
+    </div>
+    
+    <div class="whatsapp-section">
+        <h2>لإضافة منتجك أرسله عن طريق الواتساب</h2>
+        <a class="wat11" href="https://wa.me/966568824106"><button class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> تواصل معنا الآن
+        </button></a>
+    </div>
+    
+    <div class="products-grid" id="productsContainer">
+        <!-- المنتج 1 -->
+        <div class="product-card" data-name="هاتف سامسونج S22" data-category="هواتف" data-description="هاتف ذكي بشاشة 6.1 بوصة، كاميرا 50 ميجابكسل، ذاكرة 8 جيجابايت، تخزين 128 جيجابايت، مقاوم للماء والغبار.">
+            <div class="product-image">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">هواتف</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>ابوجا</span>
+                <h3 class="product-name">هاتف سامسونج S22</h3>
+                <div class="product-price">2,450 ر.س</div>
+                <p class="product-description">هاتف ذكي بشاشة 6.1 بوصة، كاميرا 50 ميجابكسل، ذاكرة 8 جيجابايت، تخزين 128 جيجابايت، مقاوم للماء والغبار.</p>
+                <button class="contact-btn">تواصل مع البائع</button>
+            </div>
+        </div>
+        
+        <!-- المنتج 2 -->
+        <div class="product-card" data-name="تلفزيون سمارت 55 بوصة" data-category="أجهزة كهربائية" data-description="تلفزيون ذكي بدقة 4K، شاشة 55 بوصة، نظام أندرويد، دعم واي فاي، منفذين USB، منفذين HDMI.">
+            <div class="product-image">
+                <i class="fas fa-tv"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">أجهزة كهربائية</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>الرياض</span>
+                <h3 class="product-name">تلفزيون سمارت 55 بوصة</h3>
+                <div class="product-price">3,100 ر.س</div>
+                <p class="product-description">تلفزيون ذكي بدقة 4K، شاشة 55 بوصة، نظام أندرويد، دعم واي فاي، منفذين USB، منفذين HDMI.</p>
+                <button class="contact-btn">تواصل مع البائع</button>
+            </div>
+        </div>
+        
+        <!-- المنتج 3 -->
+        <div class="product-card" data-name="بدلة رجالية رسمية" data-category="ملابس" data-description="بدلة رجالية أنيقة من الصوف عالي الجودة، متوفرة بألوان متعددة ومقاسات مختلفة.">
+            <div class="product-image">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">ملابس</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>جدة</span>
+                <h3 class="product-name">بدلة رجالية رسمية</h3>
+                <div class="product-price">850 ر.س</div>
+                <p class="product-description">بدلة رجالية أنيقة من الصوف عالي الجودة، متوفرة بألوان متعددة ومقاسات مختلفة.</p>
+                <button class="contact-btn">تواصل مع البائع</button>
+            </div>
+        </div>
+        
+        <!-- المنتج 4 -->
+        <div class="product-card" data-name="كنبة جلد 3 مقاعد" data-category="أثاث" data-description="كنبة فاخرة من الجلد الصناعي عالي الجودة، مقاس 3 مقاعد، متوفرة بعدة ألوان.">
+            <div class="product-image">
+                <i class="fas fa-couch"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">أثاث</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>الدمام</span>
+                <h3 class="product-name">كنبة جلد 3 مقاعد</h3>
+                <div class="product-price">1,950 ر.س</div>
+                <p class="product-description">كنبة فاخرة من الجلد الصناعي عالي الجودة، مقاس 3 مقاعد، متوفرة بعدة ألوان.</p>
+                <button class="contact-btn">تواصل مع البائع</button>
+            </div>
+        </div>
+        
+        <!-- المنتج 5 -->
+        <div class="product-card" data-name="مجموعة مكياج احترافية" data-category="أدوات تجميل" data-description="مجموعة مكياج كاملة تحتوي على ظلال عيون، أحمر شفاه، كونسيلر، وماسكارا. جميع المنتجات من ماركات عالمية.">
+            <div class="product-image">
+                <i class="fas fa-makeup-brush"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">أدوات تجميل</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>مكة</span>
+                <h3 class="product-name">مجموعة مكياج احترافية</h3>
+                <div class="product-price">320 ر.س</div>
+                <p class="product-description">مجموعة مكياج كاملة تحتوي على ظلال عيون، أحمر شفاه، كونسيلر، وماسكارا. جميع المنتجات من ماركات عالمية.</p>
+                <button class="contact-btn">تواصل مع البائع</button>
+            </div>
+        </div>
+        
+        <!-- المنتج 6 -->
+        <div class="product-card" data-name="مجفف شعر احترافي" data-category="أجهزة كهربائية" data-description="مجفف شعر بقوة 2000 واط، 3 سرعات و2 وضع حراري، مع فرشاة وفلتر قابل للإزالة.">
+            <div class="product-image">
+                <i class="fas fa-wind"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">أجهزة كهربائية</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>المدينة</span>
+                <h3 class="product-name">مجفف شعر احترافي</h3>
+                <div class="product-price">250 ر.س</div>
+                <p class="product-description">مجفف شعر بقوة 2000 واط، 3 سرعات و2 وضع حراري، مع فرشاة وفلتر قابل للإزالة.</p>
+                <button class="contact-btn">تواصل مع البائع</button>
+            </div>
+        </div>
+        
+        <!-- رسالة عدم وجود نتائج -->
+        <div class="no-results">
+            <i class="fas fa-search"></i>
+            <p>لم يتم العثور على منتجات تطابق بحثك</p>
+            <p>حاول استخدام كلمات أخرى أو تصفح فئات المتجر</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2023 أوجا ماركت - جميع الحقوق محفوظة</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ouja.market"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/ouja.market?igsh=cTBjNTNqNXM2eDRh&utm_source=qr"><i class="fab fa-instagram"></i></a>
+            <a href="https://chat.whatsapp.com/EZBtC083LGnDq4i3X0xqq5"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <div class="category-notification" id="categoryNotification">
+        يتم عرض منتجات <span id="currentCategoryText">الكل</span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

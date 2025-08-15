@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouja Market - Your Online Marketplace</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.en.css">
+</head>
+<body>
+    <header>
+        <div class="language-switcher">
+            <a href="index.html"><button class="lang-btn" id="langToggle">
+                <i class="fas fa-globe"></i>
+                <span>العربية</span>
+            </button></a>
+        </div>
+        <div class="header-content">
+            <div class="logo-section">
+                <h1>Ouja Market
+                    <img src="logo.png" alt="Ouja Market Logo" style="height:50px; vertical-align:middle; margin-right:10px;">
+                </h1>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search for a product or category...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <p class="header-subtitle">Your online marketplace to buy and sell products easily and securely</p>
+        </div>
+    </header>
+    
+    <div class="categories-container">
+        <button class="category-btn active-category" data-category="All"><i class="fas fa-list"></i> All</button>
+        <button class="category-btn" data-category="Clothing"><i class="fas fa-tshirt"></i> Clothing</button>
+        <button class="category-btn" data-category="Food"><i class="fas fa-utensils"></i> Food</button>
+        <button class="category-btn" data-category="Phones"><i class="fas fa-mobile-alt"></i> Phones</button>
+        <button class="category-btn" data-category="Appliances"><i class="fas fa-plug"></i> Appliances</button>
+        <button class="category-btn" data-category="Furniture"><i class="fas fa-couch"></i> Furniture</button>
+        <button class="category-btn" data-category="Cosmetics"><i class="fas fa-makeup-brush"></i> Cosmetics</button>
+    </div>
+    
+    <div class="search-results-info" id="resultsInfo">
+        Showing <span id="resultsCount">0</span> out of <span id="totalProducts">0</span> products
+    </div>
+    
+    <div class="whatsapp-section">
+        <h2>To add your product, send it via WhatsApp</h2>
+        <a class="wat11" href="https://wa.me/966568824106"><button class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Contact Us Now
+        </button></a>
+    </div>
+    
+    <div class="products-grid" id="productsContainer">
+        <!-- Product 1 -->
+        <div class="product-card" data-name="Samsung S22 Phone" data-category="Phones" data-description="Smartphone with 6.1-inch screen, 50MP camera, 8GB RAM, 128GB storage, water and dust resistant.">
+            <div class="product-image">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">Phones</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Abuja</span>
+                <h3 class="product-name">Samsung S22 Phone</h3>
+                <div class="product-price">2,450 SAR</div>
+                <p class="product-description">Smartphone with 6.1-inch screen, 50MP camera, 8GB RAM, 128GB storage, water and dust resistant.</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card" data-name="55-inch Smart TV" data-category="Appliances" data-description="Smart TV with 4K resolution, 55-inch screen, Android system, Wi-Fi support, 2 USB ports, 2 HDMI ports.">
+            <div class="product-image">
+                <i class="fas fa-tv"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">Appliances</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Riyadh</span>
+                <h3 class="product-name">55-inch Smart TV</h3>
+                <div class="product-price">3,100 SAR</div>
+                <p class="product-description">Smart TV with 4K resolution, 55-inch screen, Android system, Wi-Fi support, 2 USB ports, 2 HDMI ports.</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product-card" data-name="Men's Formal Suit" data-category="Clothing" data-description="Elegant men's suit made of high-quality wool, available in multiple colors and sizes.">
+            <div class="product-image">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">Clothing</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Jeddah</span>
+                <h3 class="product-name">Men's Formal Suit</h3>
+                <div class="product-price">850 SAR</div>
+                <p class="product-description">Elegant men's suit made of high-quality wool, available in multiple colors and sizes.</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+        
+        <!-- Product 4 -->
+        <div class="product-card" data-name="3-Seater Leather Sofa" data-category="Furniture" data-description="Luxurious sofa made of high-quality synthetic leather, 3-seater, available in several colors.">
+            <div class="product-image">
+                <i class="fas fa-couch"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">Furniture</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Dammam</span>
+                <h3 class="product-name">3-Seater Leather Sofa</h3>
+                <div class="product-price">1,950 SAR</div>
+                <p class="product-description">Luxurious sofa made of high-quality synthetic leather, 3-seater, available in several colors.</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+        
+        <!-- Product 5 -->
+        <div class="product-card" data-name="Professional Makeup Kit" data-category="Cosmetics" data-description="Complete makeup kit containing eyeshadow, lipstick, concealer, and mascara. All products from international brands.">
+            <div class="product-image">
+                <i class="fas fa-makeup-brush"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">Cosmetics</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Mecca</span>
+                <h3 class="product-name">Professional Makeup Kit</h3>
+                <div class="product-price">320 SAR</div>
+                <p class="product-description">Complete makeup kit containing eyeshadow, lipstick, concealer, and mascara. All products from international brands.</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+        
+        <!-- Product 6 -->
+        <div class="product-card" data-name="Professional Hair Dryer" data-category="Appliances" data-description="Hair dryer with 2000W power, 3 speeds and 2 heat settings, with brush and removable filter.">
+            <div class="product-image">
+                <i class="fas fa-wind"></i>
+            </div>
+            <div class="product-info">
+                <span class="product-category">Appliances</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Medina</span>
+                <h3 class="product-name">Professional Hair Dryer</h3>
+                <div class="product-price">250 SAR</div>
+                <p class="product-description">Hair dryer with 2000W power, 3 speeds and 2 heat settings, with brush and removable filter.</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+        </div>
+        
+        <!-- No results message -->
+        <div class="no-results">
+            <i class="fas fa-search"></i>
+            <p>No products found matching your search</p>
+            <p>Try using different words or browse the store categories</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2023 Ouja Market - All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ouja.market"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/ouja.market?igsh=cTBjNTNqNXM2eDRh&utm_source=qr"><i class="fab fa-instagram"></i></a>
+            <a href="https://chat.whatsapp.com/EZBtC083LGnDq4i3X0xqq5"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <div class="category-notification" id="categoryNotification">
+        Displaying <span id="currentCategoryText">All</span> products
+    </div>
+    <script src="script.en.js"></script>
+</body>
+</html>
